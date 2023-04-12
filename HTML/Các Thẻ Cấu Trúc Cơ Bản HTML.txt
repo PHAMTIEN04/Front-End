@@ -1,0 +1,11 @@
+<!DOCTYPE html> : Dùng để khai báo kiểu dữ liệu văn bản
+
+<!--...--> : Thẻ Chú Thích
+
+<html>...</html> : Thẻ HTML
+
+<head>...</head> : Phần đầu thường dùng để định nghĩa Tiêu Đề
+<title>...</title> : Thẻ Tiêu Dề
+<meta charset="utf-8"> : Thẻ dùng để hỗ trợ hiển thị Tiếng Việt
+
+<body>...</body> : Phần thân thường dùng ghi văn bản

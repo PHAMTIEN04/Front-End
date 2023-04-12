@@ -1,0 +1,7 @@
+-3 cách sử dụng CSS trong HTML:
+Internal : Sử dụng cặp thẻ style đặt trong thẻ HTML (h1 {thuộc tính ...})
+
+External : Tạo 1 File ở bên ngoài có đuôi là CSS và sử dụng cặp thẻ link dẫn tới file CSS
+<link rel="stylesheet" href = "main.css">
+
+Inline : Sử dụng Attribute style trong thẻ mở HTML và viết những thuộc tính 

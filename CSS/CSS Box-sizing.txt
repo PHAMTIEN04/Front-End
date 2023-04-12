@@ -1,0 +1,6 @@
+- box-sizing: border-box;
+Dùng để giữ kích thước khai báo ban đầu
+Nhưng padding chỉ được khai báo trong phạm vi cho phép nếu không sẽ không sử dụng được tính năng này.
+-  mặc định thì box-sizing:content-box;
+- box-sizing: unset;
+Dùng để huỷ tính năng box-sizing:border-box;

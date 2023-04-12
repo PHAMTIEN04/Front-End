@@ -1,0 +1,89 @@
+.phong{
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://th.bing.com/th/id/R.45745b9441e07249300e231ae0e865e2?rik=zo0gbMhaO3IS4g&pid=ImgRaw&r=0);
+}
+*{
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+}
+.title-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(221, 30, 62, 0.371);
+}
+.title-all:hover{
+    background-color: rgba(80, 68, 75, 0.24);
+}
+
+.title-all > div{
+    min-width: 200px;
+    
+}
+
+.title-all .logo ul{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.title-all .logo ul li{
+    padding: 10px;
+    color: rgb(9, 225, 9);
+}
+
+.title-all .logo ul li:hover{
+    background-color:  rgb(148, 129, 129);
+    cursor: pointer;
+    border-bottom: 2px solid  blueviolet;
+}
+
+
+.title-all .menu ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+.title-all .menu ul li{
+    padding: 10px;
+    color: rgb(9, 225, 9);
+}
+.title-all .menu ul li:hover{
+    background-color: rgb(148, 129, 129);
+    cursor: pointer;
+    border-bottom: 2px solid  blueviolet;
+    
+}
+
+.title-all .profile ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+.title-all .profile ul li{
+    padding: 10px;
+    color: rgb(9, 225, 9);
+}
+
+.title-all .profile ul li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid  blueviolet;
+    background-color:  rgb(148, 129, 129);
+}
+.title-all .profile ul .li-img{
+    width: 60px;
+    
+    border-radius: 50%;
+    
+    background-image: url(https://th.bing.com/th/id/R.4b1563c1198bc5a92355866947393fcd?rik=hFjJ%2fLvDtwozYw&pid=ImgRaw&r=0);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 10px;
+}

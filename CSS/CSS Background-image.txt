@@ -1,0 +1,9 @@
+background-image: linear-gardian(0deg,rgba(255,255,12,0.5),#666),url(chèn ảnh);
+#0 là mã màu trong suốt
+#0.5 là mã màu nửa trong suốt
+#1 là mã màu không trong suốt
+background-size: 100%;
+background-repeat:
+no-repeat : không lặp lại 
+repeat-x : lặp lại theo chiều ngang 
+repeat-y: lặp lại theo chiều dọc

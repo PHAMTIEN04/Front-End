@@ -1,0 +1,10 @@
+Đặt Biến Trong CSS 
+:root {
+	--Tên_biến : thuộc tính ;
+}
+=> Kiểu đặt biến Toàn Cục
+h1{
+	--Tên_biến : thuộc tính ;
+	color : var(--Tên_biến);
+}
+=> Kiểu đặt biến Cục Bộ

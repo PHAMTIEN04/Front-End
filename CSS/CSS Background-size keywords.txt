@@ -1,0 +1,6 @@
+1. contain: tự động kéo ảnh cho đến khi chiều rộng hoặc chiều cao của khối cần tô màu được lấp đầy 
+(chỉ cần 1 trong 2 là được), dù khối mà mình cần tô màu có bị trống cũng không sao.
+2. cover: tự động kéo ảnh cho đến khi cả chiều rộng và chiều cao được lấp đầy, 
+cho dù ảnh có bị cắt cũng không sao, cũng tức là lúc này này khối mà mình cần tô đã được bao phủ hoàn toàn rồi.
+Chú ý kéo ảnh mà mình nói là kéo theo đúng tỷ lệ của ảnh nhé,
+ ví dụ ảnh 3.4 thì kéo to lên thì thành 6.8 hoặc 9.12 ..v.v..v...

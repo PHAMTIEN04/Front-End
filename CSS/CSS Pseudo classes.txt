@@ -1,0 +1,47 @@
+Lớp Giả CSS 
+
+:root : chọn khớp với phần tử gốc của tài liệu.
+Ví dụ 
+:root {
+  background: #ff0000;
+}
+-----------------------------------------------------------------------------
+:hover : chọn được sử dụng để chọn các phần tử khi bạn di chuột qua chúng.
+Mẹo: Bộ chọn :hover có thể được sử dụng trên tất cả các phần tử, không chỉ trên
+các liên kết.
+
+Mẹo: Sử dụng bộ chọn :link để tạo kiểu liên kết đến các trang chưa được truy 
+cập, bộ chọn :visited để tạo kiểu cho liên kết đến các trang đã truy cập và bộ chọn :active để tạo kiểu cho liên kết đang hoạt động.
+
+Lưu ý: :hover PHẢI đứng sau :link và :visited (nếu có) trong định nghĩa CSS
+thì mới có hiệu quả!
+Ví dụ 
+a:hover {
+  background-color: yellow;
+}
+-----------------------------------------------------------------------------
+:active : chọn được sử dụng để chọn và tạo kiểu cho liên kết đang hoạt động.
+Một liên kết sẽ hoạt động khi bạn nhấp vào nó.
+
+Mẹo: Bộ chọn :active có thể được sử dụng trên tất cả các thành phần, 
+không chỉ các liên kết.
+
+Mẹo: Sử dụng bộ chọn :link để tạo kiểu liên kết đến các trang chưa được truy 
+cập, bộ chọn :visited để tạo kiểu cho các liên kết đến các trang đã truy cập 
+và bộ chọn :hover để tạo kiểu cho các liên kết khi bạn di chuột qua chúng.
+Lưu ý: :active PHẢI đứng sau :hover (nếu có) trong định nghĩa CSS để có hiệu 
+quả!
+Ví dụ 
+a:active {
+  background-color: yellow;
+}
+
+-----------------------------------------------------------------------------
+:first-child : Lấy giá trị phần tử đầu tiên
+p:first-child {
+  background-color: yellow;
+}
+:last-child : Lấy giá trị phần tử cuối cùng
+p:last-child {
+  background-color: yellow;
+}

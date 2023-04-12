@@ -1,0 +1,59 @@
+Kiểu viền CSS
+Thuộc border-styletính chỉ định loại đường viền sẽ hiển thị.
+
+Các giá trị sau đây được cho phép:
+
+dotted- Xác định một đường viền chấm
+dashed- Xác định đường viền nét đứt
+solid- Xác định một đường viền vững chắc
+double- Xác định đường viền kép
+groove- Xác định đường viền có rãnh 3D. Hiệu ứng phụ thuộc vào giá trị màu viền
+ridge- Xác định đường viền có gờ 3D. Hiệu ứng phụ thuộc vào giá trị màu viền
+inset- Xác định đường viền chèn 3D. Hiệu ứng phụ thuộc vào giá trị màu viền
+outset- Xác định đường viền đầu 3D. Hiệu ứng phụ thuộc vào giá trị màu viền
+none- Xác định không có biên giới
+hidden- Xác định một đường viền ẩn
+---------------------------------------------------------------------------------------------
+- Chiều rộng đường viền CSS :
+Thuộc border-widthtính chỉ định chiều rộng của bốn đường viền.
+
+Chiều rộng có thể được đặt thành kích thước cụ thể (tính bằng px, pt, cm, em, v.v.) 
+hoặc bằng cách sử dụng một trong ba giá trị được xác định trước: mỏng, trung bình hoặc dày:
+Ví dụ :
+border-width:10px 20px 30px 40px;
+---------------------------------------------------------------------------------------------
+- Màu viền CSS :
+Thuộc border-colortính được sử dụng để đặt màu cho bốn đường viền.
+Ví dụ :
+ border-color: red;
+---------------------------------------------------------------------------------------------
+- Đường viền CSS - Các mặt riêng lẻ :
+Từ các ví dụ ở các trang trước, bạn đã thấy rằng có thể chỉ định một đường viền khác nhau cho mỗi bên.
+
+Trong CSS, cũng có các thuộc tính để chỉ định từng đường viền (trên, phải, dưới và trái):
+Ví dụ :
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+Có thể ngắn gọn như sau :
+ border-style: dotted solid double dashed;
+*Theo chiều kim đồng hồ
+-----------------------------------------------------------------------------------------------
+Đường viền CSS - Thuộc tính tốc ký
+Giống như bạn đã thấy ở trang trước, có nhiều thuộc tính cần xem xét khi xử lý các đường viền.
+
+Để rút ngắn mã, cũng có thể chỉ định tất cả các thuộc tính đường viền riêng lẻ trong một thuộc tính.
+
+Thuộc bordertính này là thuộc tính tốc ký cho các thuộc tính đường viền riêng lẻ sau:
+border: 5px solid red;
+Đường viền trái :  border-left: 6px solid red;
+Đường viền dưới cùng :  border-bottom: 6px solid red;
+-----------------------------------------------------------------------------------------------
+Đường viền tròn CSS
+Thuộc border-radius tính được sử dụng để thêm các đường viền tròn vào một phần tử:
+border: 2px solid red;
+border-radius: 5px;
+

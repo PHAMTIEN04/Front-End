@@ -1,0 +1,15 @@
+Sử dụng thuộc tính tốc ký để đặt thuộc tính nền trong một khai báo:
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+Khi sử dụng thuộc tính tốc ký, thứ tự của các giá trị thuộc tính là:
+
+1.background-color
+2.background-image
+3.background-repeat
+4.background-attachment
+5.background-position
+Sẽ không có vấn đề gì nếu một trong các giá trị thuộc tính bị thiếu, miễn là 
+các giá trị khác theo thứ tự này. Lưu ý rằng chúng ta không sử dụng thuộc tính 
+background-attachment trong các ví dụ trên vì nó không có giá trị.

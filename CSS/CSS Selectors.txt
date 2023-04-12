@@ -1,0 +1,7 @@
+CSS selectors ?
+ID & Class 
+ID : Dùng để tìm kiếm thẻ HTML trong CSS và chỉ duy nhất không trùng nhau
+HTML <h1 id = "tên"> - Css #tên{}
+
+Class : Dùng để tìm kiểm thẻ HTML trong CSS sử dụng thoải mái 
+HTML <h1 class = "tên"> - Css .tên{}

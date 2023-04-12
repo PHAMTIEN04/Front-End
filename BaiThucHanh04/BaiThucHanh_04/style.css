@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+section{
+    width: 1200px;
+    margin: 30px auto;
+}
+header{
+    display: flex;
+}
+.logo img{
+    width: 120px;
+}
+.menu{
+    width: 720px;
+    height: 140px;
+    
+}
+.menu-tintuc{
+    height: 70px;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: #fff;
+}
+.menu-tintuc ul{
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul li a{
+    font-weight: bold;
+    font-size: 15px;
+}
+.menu-game{
+    height: 70px;
+    background-color: rgb(246,150,49);
+    box-sizing: border-box;
+    padding: 25px;
+}
+.menu-game ul{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-game a{
+    color: #fff;
+}
+.menu-phụ{
+    width: 360px;
+    height: 140px;
+}
+.tim-kiem{
+    height: 70px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.tim-kiem input[type="search"]{
+    margin-left: 35px;
+    width: 315px;
+    padding: 10px;
+    border: 1px solid rgb(183, 181, 181);
+}
+.icon{
+    height: 70px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(246,150,49);
+}
+.icon ul{
+    display: flex;
+    justify-content: center;
+}
+.icon i{
+    color: rgb(251,213,173);
+    font-size: 50px;
+    margin: 0px 0px 0px 15px;
+    float: right;
+}
+.banner img{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+/* content */
+.content-1{
+    float: left;
+    margin-right: 5px;
+}
+.content-1 img{
+    width: 600px;
+}
+.content-1 p{
+    position: absolute;
+    line-height: 940px;
+    margin: 10px;
+    color: #fff;
+}
+.content-1 h2{
+    width: 350px;
+    position: absolute;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 400px;
+    font-size: 21px;
+}
+.content-2 img{
+    width: 595px;
+}
+.content-2 h2{
+    width: 400px;
+    position: absolute;
+    color: #fff;
+    margin-left: 620px;
+    margin-top: 220px;
+    font-size: 21px;
+}
+.content-2{
+    margin-bottom: 2px;
+}
+.content-phu{
+    display: flex;
+}
+.content-3{
+    margin-right: 4px;
+}
+.content-3 img{
+    width: 296px;
+    height: 223px;
+}
+.content-3 h3{
+    position: absolute;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top: 160px;
+    width: 250px;
+}
+.content-4 img{
+    width: 296px;
+    height: 223px;
+}
+.content-4 h3{
+    position: absolute;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 160px;
+    width: 250px;
+}
+.phan-than{
+    margin-top: 30px;
+    width: 70%;
+    float: left;
+}
+.tin-tuc{
+    width: 50px;
+    height: 30px;
+    border-bottom: 4px solid rgb(246,156,86);
+}
+.tin-tuc h2{
+    width: 100px;
+    color: rgb(246,156,86);
+}
+.noidung{
+    width: 840px;
+    margin-top: 30px;
+}
+.noidung a{
+    width: 840px;
+    display: flex;
+}
+.image img{
+    width: 300px;
+}
+.tieu-de{
+    margin-left: 30px;
+    width: 500px;
+}
+.tieu-de h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight:500;
+}
+.tieu-de .ngay-thang{
+    opacity: 0.6;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.tieu-de .nd{
+    font-size: 15px;
+    color: gray;
+}
+.xem-them{
+    width: 100px;
+    height: 30px;
+    margin-left: 500px;
+    margin-top: 30px;
+    border: 1px solid grey;
+    background-color: white;
+    color: grey;
+}
+aside{
+    float: right;
+    margin-top: 30px;
+    width: 30%;
+}
+.moi-nhat{
+    width: 50px;
+    height: 30px;
+    border-bottom: 4px solid rgb(246,156,86);
+}
+.moi-nhat h2{
+    width: 200px;
+    color: rgb(246,156,86);
+}
+.cac-bai-viet{
+    margin-top: 30px;
+}
+.cac-bai-viet a p{
+    margin-bottom: 50px;
+    font-weight:500;
+    color: black;
+    font-size: 14px;
+}
+.anh-quang-cao img{
+    width: 360px;
+    height: 480px;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    margin-top: 1100px;
+    background-color: rgb(56,56,56);
+    color: #fff;
+}
+footer a{
+    color: #fff;
+}
+.vct{
+    width: 550px;
+    padding-top: 50px;
+    margin-left: 200px;
+    float: left;
+}
+.vct h1{
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+.vct p{
+    margin-bottom: 30px;
+}
+.mxh{
+    float: right;
+    padding-top: 50px;
+    margin-right: 400px;
+}
+.mxh h1{
+    font-weight: normal;
+}
+.muc-mxh{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.o-mxh{
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    padding: 16px;
+    margin-right: 10px;
+}
+.o-mxh i{
+    font-size: 20px;
+}
+.cuoi{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: black;
+}
+.cuoi p{
+    padding: 13px;
+    margin-left: 185px;
+}

@@ -1,0 +1,14 @@
+Độ ưu tiên trong CSS
+1. Internal, External : không có độ ưu tiên, cái nào mới sau thì hiển thị cái đó
+
+2. Inline - 1000
+3. #id - 100
+4. .class - 10
+5. tag - 1
+=> điểm càng cao càng mạnh
+6. Equal specificity : cái nào mới thì hiện thị
+=> điểm có thể cộng dồn
+Ex : .heading#heading
+7. Universal selector and inherited : + Universal thay đổi tất cả thuộc tính - * {}
+				    + inherited thay đổi thuộc tính thẻ - html{}
+=> thuộc tính quan trọng ưu tiên nhất !important

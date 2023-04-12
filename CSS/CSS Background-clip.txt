@@ -1,0 +1,1 @@
+Background-clip: tuỳ chọn tô màu background cho content hoặc padding trở vào hoặc border trở vào

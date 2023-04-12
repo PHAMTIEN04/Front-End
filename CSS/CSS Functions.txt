@@ -1,0 +1,29 @@
+var() -> CSS đặt biến
+linear-gradient() -> CSS Image
+rgba() -> CSS Image
+rgb() : Xác định màu bằng mô hình Red-Green-Blue (RGB)
+#p1 {background-color:rgb(255,0,0);} /* red */
+#p2 {background-color:rgb(0,255,0);} /* green */
+#p3 {background-color:rgb(0,0,255);} /* blue */
+-> không trong suốt được như rbga()
+calc() : Cho phép bạn thực hiện các phép tính để xác định giá trị thuộc tính CSS
+Example
+Use calc() to calculate the width of a <div> element:
+
+#div1 {
+ position: absolute;
+  left: 50px;
+  width: calc(100% - 100px);
+  border: 1px solid black;
+  background-color: yellow;
+  padding: 5px;
+  text-align: center;
+}
+
+attr() : Trả về giá trị thuộc tính của phần tử được chọn
+Ví dụ
+Ví dụ sau chèn giá trị của thuộc tính href trong ngoặc đơn sau mỗi liên kết:
+
+a::after {
+  content: " (" attr(href) ")";
+}

@@ -1,0 +1,13 @@
+1. Absolute units ? (Đơn Vị Tuyệt Đối)
+* px : pixel thay đổi kích thước
+pt
+cm
+mm
+inch
+pc
+2. Relative units ? (Đơn Vị Tương Đối)
+* % : thay đổi kích thước theo nơi chứa nó
+* rem : thay đổi kích thước theo thẻ html	
+* em : thay đổi kích thước nơi theo nơi có thuộc tính giống nó gần nhất
+* vw : thay đổi chiều rộng theo trình duyệt
+* vh : thay đổi chiều cao theo trình duyệt

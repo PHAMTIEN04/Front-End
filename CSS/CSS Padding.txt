@@ -1,0 +1,19 @@
+Các thuộc tính CSS padding được sử dụng để tạo không gian xung quanh nội dung của phần tử, bên trong bất kỳ đường viền đã xác định nào.
+
+Với CSS, bạn có toàn quyền kiểm soát phần đệm. Có các thuộc tính để đặt phần đệm cho mỗi bên của một phần tử (trên, phải, dưới và trái).
+Đệm - Các mặt riêng lẻ
+Tất cả các thuộc tính đệm CSS :
+Padding : Đặt tốc ký phần đệm theo chiều kim đồng hồ vào một phần tử
+Ex :
+padding : 100px 20px 30px 20px 
+100px là phần đệm bên trên phần tử
+20px là phần đệm bên phải phần tử
+30px là phần đệm bên dưới phần tử
+20px là phần đệm bên trái phần tử
+
+Padding-bottom : Đặt phần đệm dưới cùng của một phần tử
+Padding-left : Đặt phần đệm bên trái của một phần tử
+Padding-right : Đặt phần đệm bên phải của một phần tử
+Padding-top : Đặt phần đệm bên trên của một phần tử
+
+Element : Phần Tử

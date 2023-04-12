@@ -1,0 +1,9 @@
+Lề CSS :
+Tạo khoảng cách giữa các Element
+margin-bottom : tạo khoảng cách lề bên dưới Element
+margin-left : tạo khoảng cách lề bên trái Element
+margin-right : tạo khoảng cách lề bên phải Element
+margin-top : tạo khoảng cách bên trên Element 
+
+margin : tạo rút gọn khoảng cách và theo chiều kim đồng hồ trong Element
+margin : 10px 20px 30px 40px ;

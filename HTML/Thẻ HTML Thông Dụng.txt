@@ -1,0 +1,20 @@
+1. h1 - h6 (heading) : Tiêu đề ,kích thước nhỏ dần từ thẻ h1 -> h6
+2. p (paragraph) : Thẻ Đoạn Văn
+   br 		  : Thẻ Xuống Dòng 
+3. img (image) : Thẻ Ảnh 
+<img src="" alt=""> : thuộc tính + src(source) nguồn ảnh
+						   + alt ảnh bị lỗi
+4. a (anchor) : Thẻ Liên Kết 
+5. ul, li - unordered list, list item : Thẻ Danh Sách gồm nhiều phần tử bên trong không đánh chỉ số
+   ol, li :  Thẻ Danh Sách gồm nhiều phần tử bên trong có đánh chỉ số
+6. table : Thẻ Bảng
+   thead : Phần Đầu Bảng
+		+ th : Thẻ Tiêu Đề
+   tbody : Phân Thân Bảng
+		+ tr,td : Thẻ Dòng
+7. input : Thẻ Nhập
+8. button : Thẻ Nút
+9. div : Thẻ Khối
+
+Attribute : Thuộc tính trong HTML nằm trong thẻ mở
+<h1 title="Đây là tiêu đề">Attribute</h1>
