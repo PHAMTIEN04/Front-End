@@ -1,0 +1,42 @@
+#slide{
+    width: 1000px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+    
+    
+
+}
+#slide #hinh{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 30%;
+    opacity: 0.8;
+}
+#slide #mota {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    font-size: 1.4em;
+    color:red;
+}
+#slide .fa-chevron-circle-left{
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    font-size: 32px;
+    color: azure;
+}
+#slide .fa-chevron-circle-right{
+    position: absolute;
+    top: 45%;
+    left: 95%;
+    font-size: 32px;
+    color: azure;
+}
+body {
+    background-image: url(https://demoda.vn/wp-content/uploads/2022/02/anh-lol-dep-lmht-hinh-nen-lol-cuc-ngau.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
