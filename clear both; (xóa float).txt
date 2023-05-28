@@ -1,0 +1,291 @@
+  clear: both; (xóa float)
+  display: flex; (nằm  trên cùng 1 dòng và căn dọc giữa)
+  display: inline-block;(bỏ khoảng cách giữa các div)
+  border-bottom:3px solid #019CDF ;(dấu gạch chân)
+.skill,.ls_kq{ 
+  display: inline-block;
+} (làm cho 2 phần tử nằm trên cùng 1 hàng)
+  <td colspan="5">Học kì 1 năm học 2022-2023</td>(chiếm bao nhiêu cột trong table)
+text-align: left; (chữ nằm bên trái)
+float : left;(nằm bên trái)
+
+Dưới đây là một số thuộc tính CSS và HTML thông dụng, cùng với mô tả về tác dụng của chúng:
+
+HTML:
+
+id: Định danh duy nhất cho một phần tử HTML.
+class: Định danh cho một nhóm các phần tử HTML.
+style: Xác định các thuộc tính CSS cho một phần tử.
+src: Đường dẫn tới tài nguyên (như hình ảnh, video, âm thanh) cần hiển thị trong phần tử HTML.
+href: Đường dẫn tới tài liệu hoặc trang web liên kết với phần tử HTML.
+alt: Văn bản mô tả hình ảnh khi không thể hiển thị.
+CSS:
+
+color: Xác định màu chữ.
+background-color: Xác định màu nền.
+font-size: Xác định kích thước chữ.
+font-family: Xác định kiểu chữ.
+text-align: Căn chỉnh văn bản theo chiều ngang (trái, phải, giữa).
+width: Xác định độ rộng của một phần tử.
+height: Xác định chiều cao của một phần tử.
+border: Xác định viền của một phần tử.
+margin: Xác định khoảng cách giữa phần tử và phần tử xung quanh.
+padding: Xác định khoảng cách giữa phần tử và nội dung bên trong.
+Đây chỉ là một số thuộc tính CSS và HTML thông dụng. Có rất nhiều thuộc tính khác để tùy chỉnh và định dạng phần tử HTML, tùy thuộc vào nhu cầu và ý đồ thiết kế của bạn.
+
+
+
+
+
+User
+kể nhiều hơn nữa
+
+ChatGPT
+Dưới đây là một số thuộc tính CSS và HTML phổ biến hơn và tác dụng của chúng:
+
+HTML:
+
+title: Xác định tiêu đề cho một phần tử HTML hoặc một trang web.
+target: Xác định cách mở một liên kết khi được nhấp vào (ví dụ: trong cửa sổ mới, trong khung).
+rel: Xác định mối quan hệ giữa trang hiện tại và tài nguyên liên kết.
+disabled: Vô hiệu hóa một phần tử HTML.
+placeholder: Đặt một văn bản mô tả ngắn trong một trường nhập liệu.
+CSS:
+
+display: Xác định cách một phần tử được hiển thị trên trang (block, inline, inline-block).
+position: Xác định cách một phần tử được định vị (static, relative, absolute, fixed).
+float: Xác định cách phần tử dịch chuyển xung quanh phần tử khác (left, right).
+z-index: Xác định thứ tự hiển thị của các phần tử lớn hơn nhau.
+opacity: Xác định độ mờ của một phần tử (giá trị từ 0 đến 1).
+text-decoration: Xác định trang trí văn bản (underline, overline, line-through).
+box-shadow: Thêm bóng đổ cho một phần tử.
+transition: Xác định hiệu ứng chuyển đổi khi một thuộc tính của phần tử thay đổi.
+flexbox: Cung cấp một cách linh hoạt để sắp xếp và căn chỉnh các phần tử trong một container.
+grid: Cung cấp một cách mạnh mẽ để xây dựng giao diện tạo thành một lưới.
+Đây chỉ là một số ví dụ về thuộc tính CSS và HTML. Có rất nhiều thuộc tính khác nhau và cách chúng tác động phụ thuộc vào mục đích sử dụng và yêu cầu thiết kế của trang web.
+
+
+
+
+
+User
+kể nhiều hơn nữa
+
+ChatGPT
+Dưới đây là danh sách tiếp tục về các thuộc tính CSS và HTML phổ biến hơn và tác dụng của chúng:
+
+HTML:
+
+required: Yêu cầu người dùng nhập dữ liệu trong một trường đầu vào.
+autofocus: Đặt trường đầu vào để tự động được chọn khi trang được tải.
+readonly: Không cho phép người dùng chỉnh sửa nội dung trong một trường đầu vào.
+checked: Đánh dấu một phần tử đầu vào kiểu checkbox hoặc radio được chọn mặc định.
+maxlength: Xác định số ký tự tối đa được phép trong một trường đầu vào.
+colspan: Xác định số lượng cột mà một ô dữ liệu ngang có thể trải qua trong một bảng.
+CSS:
+
+text-transform: Xác định kiểu chữ in hoa, in thường hoặc chữ viết hoa đầu từ.
+box-sizing: Xác định cách tính toán kích thước của một phần tử (content box, border box).
+overflow: Xác định cách xử lý nội dung khi vượt quá kích thước của một phần tử.
+position: Xác định cách một phần tử được định vị (static, relative, absolute, fixed).
+text-shadow: Thêm hiệu ứng bóng cho văn bản.
+background-image: Xác định hình ảnh nền cho một phần tử.
+cursor: Xác định kiểu con trỏ hiển thị khi di chuột qua một phần tử.
+border-radius: Xác định góc bo tròn cho các góc của một phần tử.
+list-style: Xác định kiểu đánh dấu cho danh sách.
+transform: Áp dụng các biến đổi hình học (như xoay, tỉ lệ, dịch chuyển) cho một phần tử.
+Lưu ý rằng đây chỉ là một số ví dụ về thuộc tính CSS và HTML. Có rất nhiều thuộc tính khác nhau và cách chúng tác động phụ thuộc vào mục đích sử dụng và yêu cầu thiết kế của trang web.
+
+
+
+
+
+User
+kể nhiều hơn nữa
+
+ChatGPT
+Dưới đây là tiếp tục danh sách các thuộc tính CSS và HTML thông dụng hơn và tác dụng của chúng:
+
+HTML:
+
+colgroup: Xác định một nhóm cột trong một bảng.
+rowspan: Xác định số lượng hàng mà một ô dữ liệu dọc có thể trải qua trong một bảng.
+scope: Xác định phạm vi của thông tin trong một ô dữ liệu ngang hoặc dọc của một bảng.
+datetime: Xác định một giá trị ngày tháng trong phần tử <time>.
+autoplay: Tự động phát lại đa phương tiện (video, âm thanh) khi trang được tải.
+CSS:
+
+opacity: Xác định độ mờ của một phần tử (giá trị từ 0 đến 1).
+text-overflow: Xác định cách xử lý văn bản khi vượt quá kích thước của một phần tử.
+word-break: Xác định cách phân chia từ và dòng trong văn bản khi vượt quá kích thước của một phần tử.
+text-justify: Xác định cách canh lề và phân bố khoảng trống trong văn bản.
+outline: Xác định đường viền ngoài của một phần tử, không ảnh hưởng đến kích thước của phần tử.
+box-shadow: Thêm bóng đổ cho một phần tử.
+transition: Xác định hiệu ứng chuyển đổi khi một thuộc tính của phần tử thay đổi.
+flex-direction: Xác định hướng sắp xếp của các phần tử trong một container flexbox (ngang, dọc).
+grid-template-columns: Xác định cấu trúc cột của một lưới.
+animation: Xác định một hiệu ứng chuyển động hoặc thay đổi thuộc tính của một phần tử trong một khoảng thời gian.
+Đây là một số thuộc tính CSS và HTML thông dụng. Có rất nhiều thuộc tính khác để tùy chỉnh và định dạng phần tử HTML, tùy thuộc vào nhu cầu và ý đồ thiết kế của bạn.
+
+
+
+
+
+User
+tiếp tục
+
+ChatGPT
+Dưới đây là tiếp tục danh sách các thuộc tính CSS và HTML phổ biến hơn và tác dụng của chúng:
+
+HTML:
+
+target="_blank": Mở một liên kết trong một tab hoặc cửa sổ trình duyệt mới.
+download: Gắn liên kết tải xuống cho một tài nguyên, khi nhấp vào liên kết sẽ tải xuống tài nguyên đó.
+maxlength: Giới hạn số lượng ký tự được nhập vào trong một trường đầu vào.
+autocomplete: Cung cấp gợi ý hoặc điều chỉnh đầu vào dựa trên lịch sử nhập trước đó.
+form: Liên kết một phần tử với một biểu mẫu (form) xác định bởi id.
+CSS:
+
+background-size: Xác định kích thước hình ảnh nền.
+font-weight: Xác định độ đậm của chữ (như in đậm, in mỏng).
+letter-spacing: Xác định khoảng cách giữa các ký tự trong văn bản.
+line-height: Xác định chiều cao dòng của văn bản.
+text-transform: Chuyển đổi kiểu chữ thành chữ hoa, chữ thường hoặc chữ viết hoa đầu từ.
+box-decoration-break: Xác định cách xử lý viền, nền và hình ảnh nền khi phần tử bị cắt ngang qua nhiều trang.
+pointer-events: Xác định xem một phần tử có phản hồi cho các sự kiện chuột hay không.
+backface-visibility: Xác định xem mặt sau của một phần tử 3D có hiển thị hay không khi phần tử được quay.
+text-orientation: Xác định hướng văn bản (ngang, dọc).
+overflow-x và overflow-y: Xác định cách xử lý nội dung vượt quá kích thước của phần tử theo chiều ngang hoặc dọc.
+Đây chỉ là một số thuộc tính CSS và HTML thông dụng. Có rất nhiều thuộc tính khác để tùy chỉnh và định dạng phần tử HTML và CSS, tùy thuộc vào mục đích sử dụng và yêu cầu thiết kế của bạn.
+
+
+
+
+
+User
+kể ra tất cả những thuộc tính css hay sử dụng
+
+ChatGPT
+Dưới đây là danh sách các thuộc tính CSS phổ biến và thường được sử dụng trong việc định dạng và tạo kiểu cho các phần tử trên trang web:
+
+color: Xác định màu chữ.
+
+background-color: Xác định màu nền của phần tử.
+
+font-size: Xác định kích thước chữ.
+
+font-family: Xác định kiểu font chữ.
+
+font-weight: Xác định độ đậm của chữ.
+
+text-align: Xác định căn chỉnh văn bản (left, right, center, justify).
+
+text-decoration: Xác định trang trí văn bản (underline, overline, line-through).
+
+line-height: Xác định chiều cao dòng của văn bản.
+
+padding: Xác định khoảng cách giữa nội dung và đường viền bên trong phần tử.
+
+margin: Xác định khoảng cách giữa phần tử và các phần tử khác xung quanh.
+
+border: Xác định đường viền của phần tử.
+
+width: Xác định chiều rộng của phần tử.
+
+height: Xác định chiều cao của phần tử.
+
+display: Xác định cách một phần tử được hiển thị trên trang (block, inline, inline-block).
+
+position: Xác định cách một phần tử được định vị (static, relative, absolute, fixed).
+
+float: Xác định cách phần tử dịch chuyển xung quanh phần tử khác (left, right).
+
+clear: Xác định cách xử lý các phần tử dịch chuyển qua phần tử được xác định bên trái hoặc bên phải.
+
+overflow: Xác định cách xử lý nội dung khi vượt quá kích thước của phần tử.
+
+opacity: Xác định độ mờ của một phần tử (giá trị từ 0 đến 1).
+
+box-shadow: Thêm bóng đổ cho một phần tử.
+
+transition: Xác định hiệu ứng chuyển đổi khi một thuộc tính của phần tử thay đổi.
+
+transform: Áp dụng các biến đổi hình học (như xoay, tỉ lệ, dịch chuyển) cho một phần tử.
+
+background-image: Xác định hình ảnh nền cho một phần tử.
+
+background-size: Xác định kích thước hình ảnh nền.
+
+background-position: Xác định vị trí ban đầu của hình ảnh nền.
+
+background-repeat: Xác định cách lặp lại hình ảnh nền.
+
+box-sizing: Xác định cách tính toán kích thước của một phần tử (content box, border box).
+
+z-index: Xác định thứ tự hiển thị các phần tử theo độ ưu tiên.
+
+cursor: Xác định kiểu con trỏ hiển thị khi di chuột qua một phần tử.
+
+animation: Xác định một hiệu ứng chuyển động hoặc thay đổi thuộc tính của một phần tử trong một khoảng thời gian.
+
+Đây chỉ là một số thuộc tính CSS phổ biến. Có rất nhiều thuộc tính khác để tùy chỉnh và tạo kiểu cho các phần tử trên trang web, tùy thuộc vào mục đích sử dụng và yêu cầu thiết kế của bạn.
+
+
+
+
+
+User
+tiếp tục
+
+ChatGPT
+Dưới đây là danh sách tiếp tục các thuộc tính CSS phổ biến hơn:
+
+justify-content: Xác định cách phần tử con trong một container flexbox được căn chỉnh theo chiều ngang.
+
+align-items: Xác định cách phần tử con trong một container flexbox được căn chỉnh theo chiều dọc.
+
+flex-direction: Xác định hướng sắp xếp của các phần tử con trong một container flexbox.
+
+flex-wrap: Xác định cách các phần tử con trong một container flexbox được xuống dòng khi không vừa với một hàng.
+
+flex-grow: Xác định tỷ lệ mà các phần tử con trong một container flexbox sẽ mở rộng để lấp đầy không gian còn trống.
+
+flex-shrink: Xác định tỷ lệ mà các phần tử con trong một container flexbox sẽ co lại để vừa với không gian hiển thị.
+
+flex-basis: Xác định kích thước ban đầu của các phần tử con trong một container flexbox.
+
+flex: Kết hợp các thuộc tính flex-grow, flex-shrink và flex-basis vào một thuộc tính rút gọn.
+
+grid-template-columns: Xác định kích thước và cấu trúc cột trong lưới (grid).
+
+grid-template-rows: Xác định kích thước và cấu trúc hàng trong lưới (grid).
+
+grid-column-gap: Xác định khoảng cách ngang giữa các cột trong lưới (grid).
+
+grid-row-gap: Xác định khoảng cách dọc giữa các hàng trong lưới (grid).
+
+grid-area: Xác định khu vực của một phần tử trong lưới (grid).
+
+grid-template-areas: Xác định cấu trúc và vị trí của các khu vực trong lưới (grid).
+
+gap: Kết hợp các thuộc tính grid-row-gap và grid-column-gap vào một thuộc tính rút gọn.
+
+box-decoration-break: Xác định cách xử lý trang trí (như đường viền, nền) khi phần tử bị cắt ngang qua nhiều trang.
+
+columns: Xác định kích thước và kiểu chia cột cho một khối văn bản.
+
+column-gap: Xác định khoảng cách giữa các cột trong một khối văn bản chia cột.
+
+column-count: Xác định số lượng cột trong một khối văn bản chia cột.
+
+column-width: Xác định độ rộng của mỗi cột trong một khối văn bản chia cột.
+
+text-overflow: Xác định cách xử lý văn bản khi nó vượt quá không gian hiển thị.
+
+word-break: Xác định cách xử lý các từ khi chúng vượt quá khung hiển thị.
+
+white-space: Xác định cách xử lý khoảng trắng và xuống dòng trong văn bản.
+
+overflow-x: Xác định cách xử lý nội dung khi vượt quá kích thước của phần tử theo chiều ngang.
+
+overflow-y: Xác định cách xử lý nội dung khi vượt quá kích thước của phần tử theo chiều dọc.
