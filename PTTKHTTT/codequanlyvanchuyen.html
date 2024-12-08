@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bán Sách - Quản Lý Phương Thức Vận Chuyển</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+        }
+
+        header {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        /* Content area */
+        .content {
+            padding: 20px;
+        }
+
+        /* Table Container */
+        .table-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .table-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .add-button {
+            display: block;
+            margin: 10px auto 20px auto;
+            width: 140px;
+            padding: 10px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .add-button:hover {
+            background-color: #777;
+        }
+
+        .action-buttons button {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .action-buttons button:hover {
+            background-color: #777;
+        }
+
+        .action-buttons .delete {
+            background-color: #888;
+        }
+
+        .action-buttons .delete:hover {
+            background-color: #aaa;
+        }
+
+        .action-buttons .edit {
+            background-color: #555;
+        }
+
+        .action-buttons .edit:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Bán Sách</h1>
+    </header>
+    <nav>
+        <a href="#">Trang Chủ</a>
+        <a href="#">Quản Lý Danh Mục</a>
+        <a href="#">Quản Lý Quảng Cáo</a>
+        <a href="#">Quản Lý Đơn Hàng</a>
+        <a href="#">Quản Lý Tài Khoản</a>
+        <a href="#">Quản Lý Sách</a>
+        <a href="#">Quản Lý Phương Thức Thanh Toán</a>
+        <a href="#">Quản Lý Phương Thức Vận Chuyển</a>
+        <a href="#">Thống Kê Bán Hàng</a>
+        <a href="#">Đăng Xuất</a>
+    </nav>
+    <div class="content">
+        <div class="table-container">
+            <h2>Quản Lý Phương Thức Vận Chuyển</h2>
+            <a href="#" class="add-button">Thêm Vận Chuyển</a>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên Phương Thức</th>
+                        <th>Mô Tả</th>
+                        <th>Thao Tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Giao Hàng Nhanh</td>
+                        <td>Dịch vụ giao hàng nhanh trong vòng 24 giờ</td>
+                        <td class="action-buttons">
+                            <button class="edit">Sửa</button>
+                            <button class="delete">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Vận Chuyển Thường</td>
+                        <td>Giao hàng trong vòng 5-7 ngày</td>
+                        <td class="action-buttons">
+                            <button class="edit">Sửa</button>
+                            <button class="delete">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Vận Chuyển Quốc Tế</td>
+                        <td>Dịch vụ giao hàng đến các quốc gia khác</td>
+                        <td class="action-buttons">
+                            <button class="edit">Sửa</button>
+                            <button class="delete">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

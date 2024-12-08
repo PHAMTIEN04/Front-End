@@ -1,0 +1,94 @@
+Câu Hỏi Mở Đầu Học Phâng PTvTKHTTT
+1. Hệ thống thông tin là gì? Khác gì so với phần mềm?
+*k/n
+Hệ thống thông tin (Information System) là một hệ thống bao gồm các yếu tố liên kết với nhau để thu thập, 
+xử lý, lưu trữ và phân phối thông tin¹². Các hệ thống này giúp tổ chức quản lý thông tin hiệu quả,
+ hỗ trợ ra quyết định và cải thiện hoạt động kinh doanh².
+*so sánh
+Hệ thống thông tin: Bao gồm phần cứng, phần mềm, dữ liệu, con người và quy trình để quản lý và xử lý thông tin.
+Phần mềm: Chương trình thực hiện các nhiệm vụ cụ thể trên máy tính.
+
+2. Hệ thống thông tin bao gồm những thành phần nào?
+-Hệ thống thông tin bao gồm các thành phần chính sau:
+Phần cứng: Các thiết bị vật lý như máy tính, máy chủ, thiết bị lưu trữ, và mạng.
+Phần mềm: Các chương trình và ứng dụng giúp xử lý và quản lý thông tin.
+Dữ liệu: Thông tin được thu thập, lưu trữ và xử lý.
+Con người: Người sử dụng và quản lý hệ thống thông tin.
+Quy trình: Các quy tắc và quy trình để thu thập, xử lý và phân phối thông tin.
+
+3. Phân tích hệ thống thông tin có bao nhiêu phương pháp? Kể tên 2 phương pháp thông dụng nhất hiện nay ?
+*Phân tích hệ thống thông tin có nhiều phương pháp khác nhau, nhưng phổ biến nhất là:
+
+1. **Phương pháp phân tích cấu trúc**: Sử dụng các công cụ như sơ đồ luồng dữ liệu (DFD) và
+ sơ đồ thực thể - quan hệ (ERD) để mô tả các thành phần và mối quan hệ trong hệ thống.
+2. **Phương pháp hướng đối tượng**: Sử dụng các khái niệm như lớp, đối tượng và kế thừa để phân tích và
+ thiết kế hệ thống.
+3. **Phương pháp Agile**: Tập trung vào việc phát triển hệ thống thông qua các vòng lặp ngắn, 
+liên tục cải tiến và phản hồi từ người dùng.
+4. **Phương pháp Waterfall**: Tiếp cận theo từng giai đoạn từ phân tích, thiết kế, triển khai đến kiểm thử và
+ bảo trì.
+
+* 2 phương pháp thông dụng hiện nay:
+	1**Phương pháp hướng đối tượng**:
+	2**Phương pháp Agile**
+
+4. Thiết kế hệ thống thông tin bao gồm những công việc gì?
+Thiết kế hệ thống thông tin bao gồm nhiều công việc khác nhau, thường được chia thành các giai đoạn chính sau:
+
+1. **Khảo sát và thu thập yêu cầu**:
+2. **Phân tích hệ thống**:
+3. **Thiết kế hệ thống**:
+4. **Xây dựng và phát triển**:.
+5. **Kiểm thử**:
+6. **Triển khai và bảo trì**:
+
+5. Phân biệt thông tin và dữ liệu ?
+Dữ liệu: Là các số liệu hoặc tài liệu thô, chưa qua xử lý, như số liệu, ký tự, hình ảnh.
+Thông tin: Là dữ liệu đã qua xử lý, có ý nghĩa và hữu ích cho người sử dụng
+
+
+**6. Quy trình xử lý thông tin bao gồm công đoạn nào, mục đích gì, công đoạn nào quan trọng nhất?**
+- **Các công đoạn**: 
+  1. **Thu thập thông tin**: Tìm kiếm và thu thập dữ liệu từ các nguồn khác nhau.
+  2. **Xử lý và phân tích thông tin**: Làm sạch, sắp xếp và phân tích dữ liệu để tìm ra các thông tin hữu ích.
+  3. **Lưu trữ thông tin**: Lưu trữ dữ liệu đã xử lý vào các hệ thống quản lý dữ liệu.
+  4. **Phân phối và sử dụng thông tin**: Chia sẻ và sử dụng thông tin để hỗ trợ quyết định và hành động.
+- **Mục đích**: Đảm bảo thông tin chính xác, kịp thời và hữu ích để hỗ trợ các quyết định và hoạt động của tổ chức.
+- **Công đoạn quan trọng nhất**: Tùy thuộc vào mục tiêu cụ thể, nhưng **xử lý và phân tích thông tin** thường được coi là quan trọng nhất vì nó biến dữ liệu thô thành thông tin có giá trị.
+
+**7. Kể tên một số công ty phần mềm lớn của Việt Nam và các giải pháp chủ lực đang được sử dụng trong thực tế hiện nay?**
+- **FPT Software**: Cung cấp các giải pháp như tư vấn chiến lược CNTT, công nghệ và nền tảng số, dịch vụ quản lý CNTT, SAP, thiết kế trải nghiệm UI/UX¹⁶.
+- **Rikkeisoft**: Cung cấp các giải pháp phát triển phần mềm, dịch vụ IT outsourcing, và các giải pháp công nghệ tiên tiến¹⁶.
+- **CMC Corporation**: Cung cấp các giải pháp về an ninh mạng, dịch vụ đám mây, và các giải pháp phần mềm doanh nghiệp¹⁶.
+- **MISA**: Cung cấp các phần mềm quản lý tài chính, kế toán, nhân sự và quản lý doanh nghiệp¹⁶.
+
+**8. ERP là gì? Kể tên 3 nhà cung cấp ERP lớn nhất hiện nay và tên của giải pháp?**
+- **ERP (Enterprise Resource Planning)** là hệ thống hoạch định nguồn lực doanh nghiệp, giúp quản lý và 
+tự động hóa các hoạt động kinh doanh cốt lõi như tài chính, nhân sự, sản xuất, và quản lý chuỗi cung ứng¹.
+- **3 nhà cung cấp ERP lớn nhất**:
+Microsoft Dynamics 365 Business Central: Tổng thể tốt nhất
+SAP S / 4HANA: Tốt nhất cho các doanh nghiệp lớn
+Oracle ERP Cloud: Tốt nhất về khả năng mở rộng và tính linh hoạt
+
+**9. Kể tên các kho dữ liệu quốc gia mà Việt Nam đang xây dựng và ứng dụng vào mục đích gì?**
+- **Cổng dữ liệu quốc gia**: Cung cấp dữ liệu mở cho công chúng và doanh nghiệp, hỗ trợ nghiên cứu và phát triển¹¹.
+- **Cơ sở dữ liệu quốc gia về khoa học và công nghệ**: Hỗ trợ quản lý, khai thác và sử dụng thông tin khoa học và
+ công nghệ¹³.
+- **Tổng cục Thống kê**: Cung cấp dữ liệu thống kê về kinh tế, xã hội, dân số, và các lĩnh vực khác¹².
+
+**10. Kể tên các thuật toán dùng để dự báo thời tiết? 2 siêu máy tính mạnh nhất thế giới hiện nay**
+- **Thuật toán dự báo thời tiết**: 
+  1. **Mô hình dự báo thời tiết số (Numerical Weather Prediction - NWP)**.
+  2. **Mô hình học máy (Machine Learning)**.
+  3. **Mô hình thống kê (Statistical Models)**³¹.
+- **2 siêu máy tính mạnh nhất thế giới hiện nay**:
+  1. **Frontier** (Mỹ): Hiệu suất 1,2 exaFLOPS.
+  2. **Aurora** (Mỹ): Hiệu suất 585 petaFLOPS.
+
+11. Có bao nhiêu cấp độ tin học hóa đối với các hệ thống thông tin? lấy ví dụ từng cấp độ
+12. Quy trình phát triển phần mềm có bao nhiêu bước
+13. Nêu một số mô hình phát triển phần mềm hiện đang sử dụng phổ biến hiện nay? Đặc điểm chung của các mô hình đó là gì?
+14. Hệ thống thôn g tin có thể được phân loại theo những tiêu chí nào? Đối với từng tiêu chí, chỉ rõ các thức phân loại, lấy ví dụ cụ thể cho từng loại
+15. Kể tên một hệ thống thông tin quản lý được sử dụng trong thực tế, xác định các thiết bị dùng để đưa dữ liệu vào hệ thống,
+các bộ phận xử lý các dữ liệu, các đầu ra của hệ thống.
+
