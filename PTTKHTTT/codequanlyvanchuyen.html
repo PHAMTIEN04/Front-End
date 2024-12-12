@@ -3,135 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Bán Sách - Quản Lý Phương Thức Vận Chuyển</title>
+    <title>Quản Lý Phương Thức Vận Chuyển</title>
     <style>
-        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #eaeaea;
+            background: linear-gradient(to bottom, #ffe9e9, #e8f3ff);
+            color: #333;
         }
 
-        header {
-            background-color: #444;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-
-        nav {
+        .navbar {
             display: flex;
-            justify-content: space-around;
-            background-color: #555;
-            padding: 10px;
+            align-items: center;
+            justify-content: flex-start;
+            background: linear-gradient(90deg, #ff7b54, #ffbb54);
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        nav a {
+        .navbar a {
             color: white;
             text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            margin: 0 15px;
+            font-weight: bold;
         }
 
-        nav a:hover {
-            background-color: #777;
+        .navbar a:hover {
+            text-decoration: underline;
         }
 
-        /* Content area */
         .content {
             padding: 20px;
         }
 
-        /* Table Container */
-        .table-container {
-            background: #fff;
-            padding: 20px;
+        .content h2 {
+            color: #ff7b54;
+            text-align: center;
+        }
+
+        .shipping-method-list {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .shipping-method-item {
+            width: 200px;
+            padding: 15px;
+            border: 1px solid #ddd;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            margin: 20px auto;
-            max-width: 800px;
-        }
-
-        .table-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-
-        th, td {
-            padding: 10px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
-        th {
-            background-color: #f4f4f4;
+        .shipping-method-item h4 {
+            margin: 10px 0;
         }
 
-        .add-button {
-            display: block;
-            margin: 10px auto 20px auto;
-            width: 140px;
-            padding: 10px;
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+        .actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
         }
 
-        .add-button:hover {
-            background-color: #777;
-        }
-
-        .action-buttons button {
-            background-color: #555;
-            color: #fff;
-            border: none;
+        .actions .btn {
             padding: 5px 10px;
+            background: #ff7b54;
+            color: white;
+            border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background 0.3s;
         }
 
-        .action-buttons button:hover {
-            background-color: #777;
+        .actions .btn:hover {
+            background: #ff6331;
         }
 
-        .action-buttons .delete {
-            background-color: #888;
+        .form-container {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .action-buttons .delete:hover {
-            background-color: #aaa;
+        .form-container h3 {
+            color: #ff7b54;
+            margin-bottom: 15px;
         }
 
-        .action-buttons .edit {
-            background-color: #555;
+        .form-group {
+            margin-bottom: 15px;
         }
 
-        .action-buttons .edit:hover {
-            background-color: #777;
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-container .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff7b54;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .form-container .btn:hover {
+            background: #ff6331;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Website Bán Sách</h1>
-    </header>
-    <nav>
-        <a href="#">Trang Chủ</a>
+    <div class="navbar">
         <a href="#">Quản Lý Danh Mục</a>
         <a href="#">Quản Lý Quảng Cáo</a>
         <a href="#">Quản Lý Đơn Hàng</a>
@@ -140,51 +143,46 @@
         <a href="#">Quản Lý Phương Thức Thanh Toán</a>
         <a href="#">Quản Lý Phương Thức Vận Chuyển</a>
         <a href="#">Thống Kê Bán Hàng</a>
-        <a href="#">Đăng Xuất</a>
-    </nav>
+    </div>
+
     <div class="content">
-        <div class="table-container">
-            <h2>Quản Lý Phương Thức Vận Chuyển</h2>
-            <a href="#" class="add-button">Thêm Vận Chuyển</a>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Tên Phương Thức</th>
-                        <th>Mô Tả</th>
-                        <th>Thao Tác</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Giao Hàng Nhanh</td>
-                        <td>Dịch vụ giao hàng nhanh trong vòng 24 giờ</td>
-                        <td class="action-buttons">
-                            <button class="edit">Sửa</button>
-                            <button class="delete">Xóa</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Vận Chuyển Thường</td>
-                        <td>Giao hàng trong vòng 5-7 ngày</td>
-                        <td class="action-buttons">
-                            <button class="edit">Sửa</button>
-                            <button class="delete">Xóa</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Vận Chuyển Quốc Tế</td>
-                        <td>Dịch vụ giao hàng đến các quốc gia khác</td>
-                        <td class="action-buttons">
-                            <button class="edit">Sửa</button>
-                            <button class="delete">Xóa</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2>Quản Lý Phương Thức Vận Chuyển</h2>
+
+        <!-- Form Thêm Phương Thức Vận Chuyển -->
+        <div class="form-container">
+            <h3>Thêm Phương Thức Vận Chuyển</h3>
+            <form>
+                <div class="form-group">
+                    <label for="shippingMethod">Tên Phương Thức</label>
+                    <input type="text" id="shippingMethod" placeholder="Nhập tên phương thức vận chuyển">
+                </div>
+                <div class="form-group">
+                    <label for="description">Mô Tả</label>
+                    <input type="text" id="description" placeholder="Nhập mô tả phương thức vận chuyển">
+                </div>
+                <button type="submit" class="btn">Thêm Phương Thức</button>
+            </form>
+        </div>
+
+        <!-- Danh Sách Phương Thức Vận Chuyển -->
+        <div class="shipping-method-list">
+            <div class="shipping-method-item">
+                <h4>Vận Chuyển Nhận Hàng</h4>
+                <p>Mô Tả: Giao hàng tận nơi với thời gian linh hoạt</p>
+                <div class="actions">
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>
+                </div>
+            </div>
+
+            <div class="shipping-method-item">
+                <h4>Vận Chuyển Tự Lấy</h4>
+                <p>Mô Tả: Khách hàng tự đến lấy tại cửa hàng</p>
+                <div class="actions">
+                    <button class="btn">Sửa</button>
+                    <button class="btn">Xóa</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>

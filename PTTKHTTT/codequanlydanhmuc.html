@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản Lý Quảng Cáo</title>
+    <title>Quản Lý Hệ Thống</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,7 +43,7 @@
             text-align: center;
         }
 
-        .ad-list {
+        .book-list {
             margin-top: 20px;
             display: flex;
             flex-wrap: wrap;
@@ -51,9 +51,9 @@
             justify-content: center;
         }
 
-        .ad-item {
-            width: 250px;
-            padding: 15px;
+        .book-item {
+            width: 200px;
+            padding: 10px;
             border: 1px solid #ddd;
             border-radius: 10px;
             background: white;
@@ -61,7 +61,7 @@
             text-align: center;
         }
 
-        .ad-item h4 {
+        .book-item h4 {
             margin: 10px 0;
         }
 
@@ -110,7 +110,7 @@
             margin-bottom: 5px;
         }
 
-        .form-group input, .form-group textarea {
+        .form-group input {
             width: 100%;
             padding: 8px;
             border: 1px solid #ddd;
@@ -131,6 +131,7 @@
         .form-container .btn:hover {
             background: #ff6331;
         }
+
     </style>
 </head>
 <body>
@@ -146,44 +147,46 @@
     </div>
 
     <div class="content">
-        <h2>Quản Lý Quảng Cáo</h2>
+        <h2>Quản Lý Danh Mục</h2>
 
-        <!-- Form Thêm Quảng Cáo -->
         <div class="form-container">
-            <h3>Thêm Quảng Cáo</h3>
+            <h3>Thêm Sách</h3>
             <form>
                 <div class="form-group">
-                    <label for="title">Tiêu Đề Quảng Cáo</label>
-                    <input type="text" id="title" placeholder="Nhập tiêu đề quảng cáo">
+                    <label for="name">Tên Sách</label>
+                    <input type="text" id="name" placeholder="Nhập tên sách">
                 </div>
                 <div class="form-group">
-                    <label for="description">Mô Tả</label>
-                    <textarea id="description" placeholder="Nhập mô tả quảng cáo" rows="4"></textarea>
+                    <label for="author">Tác Giả</label>
+                    <input type="text" id="author" placeholder="Nhập tên tác giả">
                 </div>
                 <div class="form-group">
-                    <label for="link">Liên Kết</label>
-                    <input type="text" id="link" placeholder="Nhập liên kết đến quảng cáo">
+                    <label for="price">Giá</label>
+                    <input type="number" id="price" placeholder="Nhập giá">
                 </div>
-                <button type="submit" class="btn">Thêm Quảng Cáo</button>
+                <div class="form-group">
+                    <label for="category">Thể Loại</label>
+                    <input type="text" id="category" placeholder="Nhập thể loại">
+                </div>
+                <button type="submit" class="btn">Thêm</button>
             </form>
         </div>
 
-        <!-- Danh Sách Quảng Cáo -->
-        <div class="ad-list">
-            <div class="ad-item">
-                <h4>Quảng Cáo 1</h4>
-                <p>Mô Tả: Khuyến mãi lớn tháng này!</p>
-                <p><a href="#">Xem Quảng Cáo</a></p>
+        <div class="book-list">
+            <div class="book-item">
+                <h4>Tên Sách 1</h4>
+                <p>Tác Giả: Nguyễn Văn A</p>
+                <p>Giá: 100.000 VND</p>
                 <div class="actions">
                     <button class="btn">Sửa</button>
                     <button class="btn">Xóa</button>
                 </div>
             </div>
 
-            <div class="ad-item">
-                <h4>Quảng Cáo 2</h4>
-                <p>Mô Tả: Giảm giá 50% cho tất cả sản phẩm!</p>
-                <p><a href="#">Xem Quảng Cáo</a></p>
+            <div class="book-item">
+                <h4>Tên Sách 2</h4>
+                <p>Tác Giả: Lê Thị B</p>
+                <p>Giá: 150.000 VND</p>
                 <div class="actions">
                     <button class="btn">Sửa</button>
                     <button class="btn">Xóa</button>

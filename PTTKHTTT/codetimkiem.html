@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thủy Vân - Trang Chủ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f3f8ff, #ffffff);
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(90deg, #007bff, #00d4ff);
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar input[type="text"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .navbar button {
+            padding: 5px 10px;
+            background-color: #00d4ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+        }
+
+        .navbar button:hover {
+            background-color: #007bff;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://cdn0.fahasa.com/media/wysiwyg/Thang-12-2024/ctthang12_herobanner_1263x60.jpg') no-repeat center center/cover;
+            color: white;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner p {
+            font-size: 1.5rem;
+            margin: 10px 0 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .book-item {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .book-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .book-item h4 {
+            margin: 10px 0;
+        }
+
+        .book-item p {
+            margin: 5px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div><a href="#">Thủy Vân</a></div>
+        <div>
+            <a href="#">Trang Chủ</a>
+            <a href="#">Sách Mới</a>
+            <a href="#">Liên Hệ</a>
+            <a href="#">Đăng Nhập</a>
+        </div>
+        <!-- Thêm form tìm kiếm -->
+        <div>
+            <input type="text" id="searchInput" placeholder="Tìm kiếm sách..." onkeyup="searchBooks()">
+            <button onclick="searchBooks()">Tìm kiếm</button>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h1>Chào Mừng Đến Thủy Vân</h1>
+        <p>Khám phá thế giới sách bất tận</p>
+    </div>
+
+    <style>
+        .banner {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient màu đẹp */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner p {
+            font-size: 1.5rem;
+            margin: 10px 0 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
+
+    <div class="content">
+        <h2>Sách Nổi Bật</h2>
+        <div class="book-list" id="bookList">
+            <div class="book-item" data-title="Tên Sách 1" data-author="Nguyễn Văn A">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-2_87.jpg" alt="Book 1">
+                <h4>Tên Sách 1</h4>
+                <p>Tác Giả: Nguyễn Văn A</p>
+                <p>Giá: 100.000 VND</p>
+            </div>
+
+            <div class="book-item" data-title="Tên Sách 2" data-author="Lê Thị B">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/b/a/ban-chat-cua-nguoi-01.jpg" alt="Book 2">
+                <h4>Tên Sách 2</h4>
+                <p>Tác Giả: Lê Thị B</p>
+                <p>Giá: 150.000 VND</p>
+            </div>
+
+            <div class="book-item" data-title="Tên Sách 3" data-author="Trần Văn C">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_38609.jpg" alt="Book 3">
+                <h4>Tên Sách 3</h4>
+                <p>Tác Giả: Trần Văn C</p>
+                <p>Giá: 200.000 VND</p>
+            </div>
+        </div>
+        <!-- Hiển thị kết quả tìm kiếm -->
+        <h2 id="searchResultTitle" style="display:none;">Kết Quả Tìm Kiếm:</h2>
+        <div class="book-list" id="searchResult"></div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Thủy Vân. All rights reserved.</p>
+    </div>
+
+    <script>
+        function searchBooks() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let bookItems = document.querySelectorAll('.book-item');
+            let searchResultContainer = document.getElementById('searchResult');
+            let resultTitle = document.getElementById('searchResultTitle');
+
+            // Clear previous search results
+            searchResultContainer.innerHTML = '';
+
+            // Loop through each book item and check if it matches the search term
+            let resultFound = false;
+            bookItems.forEach(book => {
+                let title = book.getAttribute('data-title').toLowerCase();
+                let author = book.getAttribute('data-author').toLowerCase();
+
+                if (title.includes(input) || author.includes(input)) {
+                    resultFound = true;
+                    let clonedBook = book.cloneNode(true); // Clone matching book item
+                    searchResultContainer.appendChild(clonedBook); // Add to search results
+                }
+            });
+
+            // Display search results section
+            if (resultFound) {
+                resultTitle.style.display = 'block';
+                // Hide original book list to show search results
+                document.getElementById('bookList').style.display = 'none';
+            } else {
+                resultTitle.style.display = 'none';
+                document.getElementById('bookList').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

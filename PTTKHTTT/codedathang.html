@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Hàng - Thủy Vân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f3f8ff, #ffffff);
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(90deg, #007bff, #00d4ff);
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f5f5, #ffffff);
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 70%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .step {
+            display: none;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        .step h2 {
+            color: #007bff;
+            text-align: center;
+        }
+
+        .step input, .step select, .step textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .next-btn, .back-btn {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .next-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .back-btn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .next-btn:hover, .back-btn:hover {
+            opacity: 0.8;
+        }
+
+        .order-summary {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .order-summary h3 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .order-summary p {
+            margin: 5px 0;
+        }
+
+        .order-summary .total-price {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #28a745;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div><a href="#">Thủy Vân</a></div>
+        <div>
+            <a href="#">Trang Chủ</a>
+            <a href="#">Giỏ Hàng</a>
+            <a href="#">Liên Hệ</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Bước 1: Nhập thông tin -->
+        <div class="step active" id="step1">
+            <h2>Bước 1: Nhập Thông Tin Liên Hệ</h2>
+            <input type="text" id="name" placeholder="Họ và tên" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Số điện thoại" required>
+            <input type="text" id="address" placeholder="Địa chỉ giao hàng" required>
+            <div class="button-container">
+                <button class="next-btn" onclick="nextStep()">Tiếp theo</button>
+            </div>
+        </div>
+
+        <!-- Bước 2: Chọn phương thức thanh toán và vận chuyển -->
+        <div class="step" id="step2">
+            <h2>Bước 2: Chọn Phương Thức Thanh Toán và Vận Chuyển</h2>
+            <select id="paymentMethod" required>
+                <option value="">Chọn phương thức thanh toán</option>
+                <option value="cod">Thanh toán khi nhận hàng (COD)</option>
+                <option value="bank">Chuyển khoản ngân hàng</option>
+                <option value="card">Thẻ tín dụng</option>
+            </select>
+            <select id="shippingMethod" required>
+                <option value="">Chọn phương thức vận chuyển</option>
+                <option value="standard">Vận chuyển tiêu chuẩn (3-5 ngày)</option>
+                <option value="express">Vận chuyển nhanh (1-2 ngày)</option>
+            </select>
+            <div class="button-container">
+                <button class="back-btn" onclick="prevStep()">Quay lại</button>
+                <button class="next-btn" onclick="nextStep()">Tiếp theo</button>
+            </div>
+        </div>
+
+        <!-- Bước 3: Xác nhận đơn hàng -->
+        <div class="step" id="step3">
+            <h2>Bước 3: Xác Nhận Đơn Hàng</h2>
+            <div class="order-summary">
+                <h3>Thông tin đơn hàng</h3>
+                <p><strong>Họ và tên:</strong> <span id="confirmName"></span></p>
+                <p><strong>Email:</strong> <span id="confirmEmail"></span></p>
+                <p><strong>Số điện thoại:</strong> <span id="confirmPhone"></span></p>
+                <p><strong>Địa chỉ giao hàng:</strong> <span id="confirmAddress"></span></p>
+                <p><strong>Phương thức thanh toán:</strong> <span id="confirmPayment"></span></p>
+                <p><strong>Phương thức vận chuyển:</strong> <span id="confirmShipping"></span></p>
+                <p class="total-price">Tổng tiền: 450,000 VND</p>
+                <div class="button-container">
+                    <button class="back-btn" onclick="prevStep()">Quay lại</button>
+                    <button class="next-btn" onclick="confirmOrder()">Xác nhận đơn hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 1;
+
+        // Hàm chuyển sang bước tiếp theo
+        function nextStep() {
+            if (currentStep === 1) {
+                // Kiểm tra thông tin nhập trong bước 1
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const address = document.getElementById('address').value;
+
+                if (name && email && phone && address) {
+                    currentStep++;
+                    showStep();
+                } else {
+                    alert("Vui lòng nhập đầy đủ thông tin.");
+                }
+            } else if (currentStep === 2) {
+                // Kiểm tra chọn phương thức thanh toán và vận chuyển
+                const paymentMethod = document.getElementById('paymentMethod').value;
+                const shippingMethod = document.getElementById('shippingMethod').value;
+
+                if (paymentMethod && shippingMethod) {
+                    currentStep++;
+                    showStep();
+                } else {
+                    alert("Vui lòng chọn phương thức thanh toán và vận chuyển.");
+                }
+            }
+        }
+
+        // Hàm quay lại bước trước
+        function prevStep() {
+            currentStep--;
+            showStep();
+        }
+
+        // Hàm hiển thị bước hiện tại
+        function showStep() {
+            const steps = document.querySelectorAll('.step');
+            steps.forEach(step => step.classList.remove('active'));
+            document.getElementById('step' + currentStep).classList.add('active');
+
+            if (currentStep === 3) {
+                // Hiển thị thông tin xác nhận
+                document.getElementById('confirmName').textContent = document.getElementById('name').value;
+                document.getElementById('confirmEmail').textContent = document.getElementById('email').value;
+                document.getElementById('confirmPhone').textContent = document.getElementById('phone').value;
+                document.getElementById('confirmAddress').textContent = document.getElementById('address').value;
+                document.getElementById('confirmPayment').textContent = document.getElementById('paymentMethod').value;
+                document.getElementById('confirmShipping').textContent = document.getElementById('shippingMethod').value;
+            }
+        }
+
+        // Hàm xác nhận đơn hàng
+        function confirmOrder() {
+            alert("Đơn hàng của bạn đã được xác nhận. Cảm ơn bạn!");
+            // Reset lại tất cả
+            currentStep = 1;
+            showStep();
+        }
+
+        // Hiển thị bước đầu tiên khi trang được tải
+        showStep();
+    </script>
+</body>
+</html>

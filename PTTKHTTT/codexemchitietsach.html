@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thủy Vân - Trang Chủ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f3f8ff, #ffffff);
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(90deg, #007bff, #00d4ff);
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient màu đẹp */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner p {
+            font-size: 1.5rem;
+            margin: 10px 0 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .book-item {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .book-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .book-item h4 {
+            margin: 10px 0;
+        }
+
+        .book-item p {
+            margin: 5px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Chi tiết sách */
+        .book-detail {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-detail h3 {
+            color: #007bff;
+        }
+
+        .book-detail p {
+            font-size: 1.2rem;
+        }
+
+        .close-detail {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .close-detail:hover {
+            background-color: #00d4ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div><a href="#">Thủy Vân</a></div>
+        <div>
+            <a href="#">Trang Chủ</a>
+            <a href="#">Sách Mới</a>
+            <a href="#">Liên Hệ</a>
+            <a href="#">Đăng Nhập</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h1>Chào Mừng Đến Thủy Vân</h1>
+        <p>Khám phá thế giới sách bất tận</p>
+    </div>
+
+    <div class="content">
+        <h2>Sách Nổi Bật</h2>
+        <div class="book-list">
+            <div class="book-item" data-title="Tên Sách 1" data-author="Nguyễn Văn A" data-price="100.000 VND" data-description="Mô tả chi tiết sách 1">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-2_87.jpg" alt="Book 1">
+                <h4>Tên Sách 1</h4>
+                <p>Tác Giả: Nguyễn Văn A</p>
+                <p>Giá: 100.000 VND</p>
+            </div>
+
+            <div class="book-item" data-title="Tên Sách 2" data-author="Lê Thị B" data-price="150.000 VND" data-description="Mô tả chi tiết sách 2">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/b/a/ban-chat-cua-nguoi-01.jpg" alt="Book 2">
+                <h4>Tên Sách 2</h4>
+                <p>Tác Giả: Lê Thị B</p>
+                <p>Giá: 150.000 VND</p>
+            </div>
+
+            <div class="book-item" data-title="Tên Sách 3" data-author="Trần Văn C" data-price="200.000 VND" data-description="Mô tả chi tiết sách 3">
+                <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_38609.jpg" alt="Book 3">
+                <h4>Tên Sách 3</h4>
+                <p>Tác Giả: Trần Văn C</p>
+                <p>Giá: 200.000 VND</p>
+            </div>
+        </div>
+
+        <!-- Hiển thị chi tiết sách -->
+        <div class="book-detail" id="bookDetail">
+            <h3 id="bookTitle"></h3>
+            <p><strong>Tác Giả:</strong> <span id="bookAuthor"></span></p>
+            <p><strong>Giá:</strong> <span id="bookPrice"></span></p>
+            <p><strong>Mô Tả:</strong> <span id="bookDescription"></span></p>
+            <button class="close-detail" onclick="closeBookDetail()">Đóng</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Thủy Vân. All rights reserved.</p>
+    </div>
+
+    <script>
+        // Hiển thị chi tiết sách khi nhấp vào sách
+        const bookItems = document.querySelectorAll('.book-item');
+        const bookDetail = document.getElementById('bookDetail');
+        const bookTitle = document.getElementById('bookTitle');
+        const bookAuthor = document.getElementById('bookAuthor');
+        const bookPrice = document.getElementById('bookPrice');
+        const bookDescription = document.getElementById('bookDescription');
+
+        bookItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Lấy thông tin chi tiết sách từ các thuộc tính của phần tử
+                bookTitle.textContent = item.getAttribute('data-title');
+                bookAuthor.textContent = item.getAttribute('data-author');
+                bookPrice.textContent = item.getAttribute('data-price');
+                bookDescription.textContent = item.getAttribute('data-description');
+
+                // Hiển thị chi tiết sách
+                bookDetail.style.display = 'block';
+            });
+        });
+
+        // Đóng chi tiết sách
+        function closeBookDetail() {
+            bookDetail.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

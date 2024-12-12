@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thủy Vân - Giỏ Hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f3f8ff, #ffffff);
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(90deg, #007bff, #00d4ff);
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f5f5, #ffffff);
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-details {
+            background: #ffffff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 70%;
+            margin: 0 auto;
+            max-height: 70%;
+            overflow-y: auto;
+            background: linear-gradient(135deg, #e2f7ff, #ffffff);
+        }
+
+        .cart-details h2 {
+            color: #007bff;
+            text-align: center;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+
+        .cart-item-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cart-item-details h4 {
+            margin: 0;
+        }
+
+        .cart-item-details p {
+            margin: 5px 0;
+        }
+
+        .cart-item .quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quantity input {
+            width: 40px;
+            text-align: center;
+            font-size: 1rem;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .cart-item .remove-btn {
+            color: red;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .cart-item .remove-btn:hover {
+            text-decoration: underline;
+        }
+
+        .total {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .checkout-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div><a href="#">Thủy Vân</a></div>
+        <div>
+            <a href="#">Trang Chủ</a>
+            <a href="#">Sách Mới</a>
+            <a href="#">Liên Hệ</a>
+            <!-- <a href="#">Đăng Nhập</a> -->
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="cart-details" id="cartDetails">
+            <h2>Giỏ Hàng</h2>
+            <div id="cartItems">
+                <!-- Các sản phẩm trong giỏ sẽ hiển thị ở đây -->
+            </div>
+            <div class="total" id="cartTotal">Tổng Tiền: 0 VND</div>
+            <button class="checkout-btn" onclick="checkout()">Thanh Toán</button>
+        </div>
+    </div>
+
+    <script>
+        // Giỏ hàng mẫu
+        let cart = [
+            { title: "Tên Sách 1", author: "Nguyễn Văn A", price: 100000, quantity: 2, image: "https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-2_87.jpg" },
+            { title: "Tên Sách 2", author: "Lê Thị B", price: 150000, quantity: 1, image: "https://cdn0.fahasa.com/media/catalog/product/b/a/ban-chat-cua-nguoi-01.jpg" },
+            { title: "Tên Sách 3", author: "Trần Văn C", price: 200000, quantity: 3, image: "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_38609.jpg" }
+        ];
+
+        // Kiểm tra trạng thái đăng nhập (giả sử đã đăng nhập)
+        const isLoggedIn = false; // Cập nhật nếu người dùng đăng nhập (true/false)
+
+        // Hàm hiển thị giỏ hàng
+        function displayCart() {
+            const cartItemsDiv = document.getElementById('cartItems');
+            const cartTotalDiv = document.getElementById('cartTotal');
+            cartItemsDiv.innerHTML = '';  // Xóa các sản phẩm cũ trong giỏ
+
+            let total = 0;
+            cart.forEach((item, index) => {
+                const itemDiv = document.createElement('div');
+                itemDiv.classList.add('cart-item');
+                itemDiv.innerHTML = `
+                    <img src="${item.image}" alt="Book Image">
+                    <div class="cart-item-details">
+                        <h4>${item.title}</h4>
+                        <p>Tác Giả: ${item.author}</p>
+                        <p>Giá: ${item.price.toLocaleString()} VND</p>
+                    </div>
+                    <div class="quantity">
+                        <button onclick="updateQuantity(${index}, -1)">-</button>
+                        <input type="number" value="${item.quantity}" min="1" readonly>
+                        <button onclick="updateQuantity(${index}, 1)">+</button>
+                    </div>
+                    <span class="remove-btn" onclick="removeFromCart(${index})">Xóa</span>
+                `;
+                cartItemsDiv.appendChild(itemDiv);
+                total += item.price * item.quantity;
+            });
+
+            cartTotalDiv.textContent = 'Tổng Tiền: ' + total.toLocaleString() + ' VND';
+        }
+
+        // Hàm cập nhật số lượng sản phẩm
+        function updateQuantity(index, change) {
+            if (cart[index].quantity + change > 0) {
+                cart[index].quantity += change;
+                displayCart();
+            }
+        }
+
+        // Hàm xóa sản phẩm khỏi giỏ hàng
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            displayCart();
+        }
+
+        // Hàm thanh toán (chưa thực hiện gì)
+        function checkout() {
+            if (isLoggedIn) {
+                alert('Chức năng thanh toán chưa được thực hiện.');
+            } else {
+                alert('Bạn cần đăng nhập để thanh toán.');
+            }
+        }
+
+        // Hiển thị giỏ hàng khi trang được tải
+        displayCart();
+    </script>
+</body>
+</html>

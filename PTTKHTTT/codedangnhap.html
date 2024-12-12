@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(90deg, #ff7b54, #ffbb54);
+            color: white;
+            padding: 15px 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #fff8f0;
+        }
+
+        .search-bar {
+            flex: 1;
+            margin: 0 30px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 420px;
+            margin: 60px auto;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #f7f7f7, #ffffff);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff7b54;
+            font-size: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f9f9f9;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            border-color: #ff7b54;
+            box-shadow: 0 0 5px rgba(255, 123, 84, 0.5);
+            outline: none;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(90deg, #ff7b54, #ffbb54);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            font-size: 18px;
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #ff6331, #ffab31);
+            transform: translateY(-5px);
+        }
+
+        .btn:active {
+            transform: translateY(2px);
+        }
+
+        .link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .link a {
+            color: #ff7b54;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .link a:hover {
+            color: #ff6331;
+            text-decoration: underline;
+        }
+
+        .forgot-password {
+            margin-top: 25px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff8f0;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .forgot-password h3 {
+            color: #ff7b54;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password .btn {
+            background: #ffbb54;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .forgot-password .btn:hover {
+            background: #ffab31;
+            transform: translateY(-5px);
+        }
+
+        .forgot-password .btn:active {
+            transform: translateY(2px);
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar a {
+                margin-bottom: 10px;
+            }
+
+            .container {
+                margin: 30px auto;
+                padding: 25px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .form-group input {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm tên sách, tác giả">
+        </div>
+        <div>
+            <a href="#">Đăng Nhập</a>
+            <a href="#">Giỏ Hàng</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Đăng Nhập</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Nhập email">
+            </div>
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" placeholder="Nhập mật khẩu">
+            </div>
+            <button type="submit" class="btn">Đăng Nhập</button>
+        </form>
+        <div class="link">
+            Bạn chưa có tài khoản? Hãy <a href="#">Đăng Kí</a>
+        </div>
+
+        <div class="forgot-password">
+            <h3>Quên Mật Khẩu</h3>
+            <form>
+                <div class="form-group">
+                    <label for="reset-email">Email</label>
+                    <input type="email" id="reset-email" placeholder="Nhập email để khôi phục">
+                </div>
+                <button type="submit" class="btn">Tìm lại mật khẩu</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
